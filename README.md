@@ -1,47 +1,84 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=27&pause=900&color=A78BFA&center=true&vCenter=true&width=860&height=64&lines=Arpita+Tiwari;AI+engineer+%C2%B7+agents%2C+RAG%2C+and+data+systems;building+open+source+at+opensyndicate;from+design+to+running+in+production" alt="Arpita Tiwari" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=25&pause=900&color=2563EB&center=true&vCenter=true&width=880&height=64&lines=Arpita+Tiwari;Finance+Analyst+%C2%B7+FP%26A+and+record+to+report;I+build+the+tooling+for+the+work+I+do+by+hand;rules+first%2C+a+model+only+where+it+belongs" alt="Arpita Tiwari" />
 
 <p>
-<a href="https://github.com/opensyndicate"><img src="https://img.shields.io/badge/opensyndicate-co__maintainer-A78BFA?style=for-the-badge&logo=github&logoColor=A78BFA&labelColor=0B1120" alt="opensyndicate" /></a>
-<img src="https://komarev.com/ghpvc/?username=arpita-at&style=for-the-badge&color=A78BFA&labelColor=0B1120&label=profile+views" alt="views" />
+<a href="https://www.linkedin.com/in/arpita-tiwari-5b955a307"><img src="https://img.shields.io/badge/FP%26A-record__to__report-2563EB?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0F172A" alt="FP&A" /></a>
+<img src="https://img.shields.io/badge/Bengaluru-open__from__16__Nov__2026-16A34A?style=for-the-badge&labelColor=0F172A" alt="Availability" />
+<img src="https://komarev.com/ghpvc/?username=arpita-at&style=for-the-badge&color=2563EB&labelColor=0F172A&label=profile+views" alt="views" />
 </p>
 
 </div>
 
 ---
 
-I build backend systems and AI tooling: agents that do real work, retrieval
-that stays correct as data changes, and the data infrastructure underneath. I
-help lead **[opensyndicate](https://github.com/opensyndicate)**, a home for
-free, open-source tools across AI agents, RAG, and web scraping.
+I am a **Finance Analyst** at a global shared services centre in Bengaluru. Month-end
+close, balance sheet reconciliations, budget versus actual, and the commentary that
+goes with it.
 
-My focus is the hard, unglamorous parts: making an agent loop reliable, keeping
-retrieval fresh and trustworthy, and shipping services that hold up under load
-rather than in a demo.
+I also write the tooling for the parts of that job I kept doing by hand. Not because
+automation is interesting, but because the fourth time you reconcile the same file the
+same way, it stops being analysis.
 
 ```text
-  focus ──►  agents & orchestration   multi-step loops, tool use, evals
-             retrieval (RAG)          freshness, source authority, ranking
-             data & scraping          large-scale extraction, anti-bot research
-             backend & infra          Python, FastAPI, Postgres, Docker
+  by day ──►  record to report      close, reconciliations, accruals, intercompany
+              FP&A                  budget vs actual, flux and variance commentary
+              systems               SAP (FB03, FAGLL03, FS10N), Ariba, TM1, Excel
+
+  by night ─► finance agents        deterministic rules, a model only for ambiguity
+              controls              audit trail on every decision, human approval gate
+              stack                 Python, FastAPI, pandas, pytest, Anthropic
 ```
+
+### What I believe about AI in finance
+
+Most of it aims at the wrong bottleneck. Close is not slow because the arithmetic is
+hard. It is slow because data arrives late, nobody owns the cost line, and the answer
+lives in the head of someone on leave. Those are structural problems, not compute
+problems.
+
+So everything here follows the same shape:
+
+| | |
+|---|---|
+| **Rules** | Matching, totalling, thresholds, FX, anything that must tie to the penny |
+| **Model** | Naming a cause, classifying an exception, drafting a sentence |
+| **Human** | Signing. That does not move to software |
+
+If it must tie exactly, it is a rule. You can regression test a rule. You cannot
+regression test a vibe.
+
+### Finance tooling
+
+| Repo | What it does |
+|---|---|
+| **[flux-agent](https://github.com/arpita-at/flux-agent)** | Month-end flux commentary. Deterministic variance, materiality and evidence retrieval; a model drafts the sentence, and only from postings it was handed. A line with no evidence comes back as a gap, never a guess |
+| **[reconcile-studio](https://github.com/arpita-at/reconcile-studio)** | Settlement reconciliation. Match a gateway file against the ledger, label every discrepancy, report a match rate with an audit trail |
+| **[reconcile](https://github.com/arpita-at/reconcile)** | The gateway-agnostic engine underneath. Deterministic matcher plus a Claude agent for the fuzzy cases |
+| **[dispute-agent](https://github.com/arpita-at/dispute-agent)** | Chargebacks. Triages by reason code, lists the missing evidence, drafts the representment |
+| **[risk-triage](https://github.com/arpita-at/risk-triage)** | Transaction risk scoring. Deterministic engine, Claude only on the borderline cases. Advisory only |
 
 ### Stack
 
 <p>
-<img src="https://img.shields.io/badge/Python-0B1120?style=for-the-badge&logo=python&logoColor=A78BFA" alt="Python" />
-<img src="https://img.shields.io/badge/FastAPI-0B1120?style=for-the-badge&logo=fastapi&logoColor=A78BFA" alt="FastAPI" />
-<img src="https://img.shields.io/badge/PostgreSQL-0B1120?style=for-the-badge&logo=postgresql&logoColor=A78BFA" alt="PostgreSQL" />
-<img src="https://img.shields.io/badge/Docker-0B1120?style=for-the-badge&logo=docker&logoColor=A78BFA" alt="Docker" />
-<img src="https://img.shields.io/badge/Anthropic-0B1120?style=for-the-badge&logo=anthropic&logoColor=A78BFA" alt="Anthropic" />
+<img src="https://img.shields.io/badge/Excel-0F172A?style=for-the-badge&logo=microsoftexcel&logoColor=16A34A" alt="Excel" />
+<img src="https://img.shields.io/badge/SAP-0F172A?style=for-the-badge&logo=sap&logoColor=2563EB" alt="SAP" />
+<img src="https://img.shields.io/badge/Python-0F172A?style=for-the-badge&logo=python&logoColor=2563EB" alt="Python" />
+<img src="https://img.shields.io/badge/pandas-0F172A?style=for-the-badge&logo=pandas&logoColor=2563EB" alt="pandas" />
+<img src="https://img.shields.io/badge/FastAPI-0F172A?style=for-the-badge&logo=fastapi&logoColor=2563EB" alt="FastAPI" />
+<img src="https://img.shields.io/badge/pytest-0F172A?style=for-the-badge&logo=pytest&logoColor=2563EB" alt="pytest" />
+<img src="https://img.shields.io/badge/Anthropic-0F172A?style=for-the-badge&logo=anthropic&logoColor=7C3AED" alt="Anthropic" />
 </p>
 
-### Where I contribute
-Open-source tools at **[opensyndicate](https://github.com/opensyndicate)**:
-agent orchestration, freshness-aware retrieval for RAG, and a set of web-data
-tools. Pick a repo, open an issue, and let's build.
+### Still learning
+
+Consolidation across many entities at scale. Statutory and audit workflow end to end.
+Power BI beyond the basics. I would rather write that here than guess in an interview.
 
 ### Reach me
-Find me through [opensyndicate](https://github.com/opensyndicate) or open an
-issue on any repo.
+
+Open to **Finance Analyst, FP&A Analyst and R2R Analyst** roles in Bengaluru or hybrid,
+available from **16 November 2026**.
+
+[LinkedIn](https://www.linkedin.com/in/arpita-tiwari-5b955a307) · sktarpita@gmail.com ·
+or open an issue on any repo and tell me where the logic breaks.
