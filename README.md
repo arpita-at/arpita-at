@@ -52,7 +52,10 @@ regression test a vibe.
 
 | Repo | What it does |
 |---|---|
+| **[margin-model](https://github.com/arpita-at/margin-model)** | Overhead absorption and product profitability. Allocates one pool two ways, a plantwide machine-hour rate and activity-based driver rates, and reports which products change sign. On the sample all six look profitable under the blanket rate; two, carrying 12.2% of revenue, are loss-making under the drivers. Splits over and under absorption into expenditure and volume variance. Excel workbook with live formulas |
 | **[flux-agent](https://github.com/arpita-at/flux-agent)** | Month-end flux commentary. Deterministic variance, materiality and evidence retrieval; a model drafts the sentence, and only from postings it was handed. A line with no evidence comes back as a gap, never a guess |
+| **[grir-agent](https://github.com/arpita-at/grir-agent)** | GR/IR open item triage for SAP. Groups every posting by PO line, nets it, names the mechanical cause and sizes the exposure. On the sample 45% of the aged account already balances and carries no exposure at all |
+| **[dupe-agent](https://github.com/arpita-at/dupe-agent)** | Duplicate supplier payments the ERP's own check never sees. Normalises invoice numbers and vendor names, scores six near-duplicate patterns, and asks a model one question only: is there an innocent explanation |
 | **[reconcile-studio](https://github.com/arpita-at/reconcile-studio)** | Settlement reconciliation. Match a gateway file against the ledger, label every discrepancy, report a match rate with an audit trail |
 | **[reconcile](https://github.com/arpita-at/reconcile)** | The gateway-agnostic engine underneath. Deterministic matcher plus a Claude agent for the fuzzy cases |
 | **[dispute-agent](https://github.com/arpita-at/dispute-agent)** | Chargebacks. Triages by reason code, lists the missing evidence, drafts the representment |
@@ -73,7 +76,12 @@ regression test a vibe.
 ### Still learning
 
 Consolidation across many entities at scale. Statutory and audit workflow end to end.
-Power BI beyond the basics. I would rather write that here than guess in an interview.
+Power BI beyond the basics.
+
+Costing is the honest caveat on margin-model: I have built the allocation and the
+absorption variance and I can defend every formula in it, but I have not yet run
+product costing inside a live ERP. CO-PA, standard cost rolls and the month-end
+revaluation are next. I would rather write that here than guess in an interview.
 
 ### Reach me
 
